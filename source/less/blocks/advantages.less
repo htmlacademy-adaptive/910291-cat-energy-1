@@ -1,0 +1,124 @@
+.advantages {
+  @media(min-width: @tablet-width) {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media(min-width: @desktop-width)  {
+     border: none;
+  }
+}
+.advantages__title {
+  padding-top: 71px;
+}
+
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  padding-bottom: 49px;
+
+  @media(min-width: @tablet-width) {
+    flex-direction: row;
+    column-gap: 20%;
+    row-gap: 37px;
+  }
+
+  @media(min-width: @desktop-width) {
+    row-gap: 0;
+    column-gap: 0;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-bottom: 69px;
+  }
+}
+
+
+.advantages__item {
+  padding-left: 80px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  min-height: 60px;
+  background-size: 60px 60px;
+  position: relative;
+
+  @media(min-width: @tablet-width) {
+    width: 35%;
+    padding-left: 0;
+    padding-top: 111px;
+    background-size: 80px 80px;
+    font-size: 16px;
+    line-height: 24px;
+    min-height: 280px;
+    font-family: @oswald;
+    box-sizing: border-box;
+    z-index: 10;
+
+  }
+
+  @media(min-width: @desktop-width) {
+    width: 20%;
+    padding-top: 151px;
+    padding-bottom: 57px;
+    background-position: 0 40px;
+  }
+
+}
+
+.advantages__item::before {
+  position: absolute;
+  top: -35px;
+  right: 25px;
+  font-size: 280px;
+  line-height: 280px;
+  color: #f2f2f2;
+  z-index: -1;
+
+  @media(min-width: @desktop-width) {
+    top: -19px;
+    right: 0;
+  }
+}
+
+.advantages__item--production {
+  background-image: url("../../img/advantages-item-production-icon.svg");
+}
+
+.advantages__item--production::before{
+  @media(min-width: @tablet-width) {
+    content: "1";
+  }
+}
+
+.advantages__item--convenience {
+  background-image: url("../../img/advantages-item-convenience-icon.svg");
+}
+
+.advantages__item--convenience::before {
+  @media(min-width: @tablet-width) {
+    content: "2";
+  }
+}
+
+.advantages__item--meal-replacement {
+  background-image: url("../../img/advantages-item-meal-replacement-icon.svg");
+}
+
+.advantages__item--meal-replacement::before {
+  @media(min-width: @tablet-width) {
+    content: "3";
+  }
+}
+
+.advantages__item--result {
+  background-image: url("../../img/advantages-item-result-icon.svg");
+}
+
+.advantages__item--result::before {
+  @media(min-width: @tablet-width) {
+    content: "4";
+  }
+}

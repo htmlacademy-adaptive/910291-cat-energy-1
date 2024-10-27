@@ -1,0 +1,35 @@
+body {
+  font-family: @lato;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  background-color: #ffffff;
+}
+
+.container {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+
+
+  @media(min-width: @tablet-width) {
+    width: calc(100% - 60px);
+  }
+
+  @media(min-width: @desktop-width) {
+    width: calc(100% - 220px);
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  border: 0;
+}
